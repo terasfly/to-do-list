@@ -21,7 +21,7 @@ body {
 .title {
     color: #6060ea;
     background: #fff;
-    min-width: 500px;
+    width: 500px;
     /* Adjust the minimum width as needed */
     border-radius: 8px;
     /* Slightly increased border-radius for a softer look */
@@ -120,4 +120,48 @@ input {
     background-color: #1313ed;
     border: none;
     color: #fff;
+}
+
+
+/* Default styles for larger screens */
+
+
+/* Your existing CSS goes here */
+
+
+/* Media query for iPhone 12 and similar devices */
+
+@media (max-width: 390px) {
+    .container {
+        min-height: 100vh;
+        width: 390px;
+        /* Adjust the height for smaller screens */
+    }
+    .title {
+        font-size: 25px;
+        padding: 10px;
+        max-width: 380px;
+        /* Adjust the minimum width for smaller screens */
+    }
+    .app {
+        width: 90%;
+        /* Make the app width 100% on smaller screens */
+    }
+    .task-box {
+        flex-direction: column;
+        /* Stack input and button vertically on smaller screens */
+    }
+    .task-box__button {
+        /* background-color: green; */
+    }
+    input {
+        /* margin-right: 29px; */
+        /* Remove right margin for input on smaller screens */
+    }
+    .tasks-boxes input {
+        font-size: 16px;
+    }
+    .tasks-boxes {
+        margin-right: 6px;
+    }
 }
